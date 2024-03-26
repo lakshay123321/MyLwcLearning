@@ -1,6 +1,6 @@
-import { LightningElement } from 'lwc';
+import { LightningElement ,api} from 'lwc';
 
 export default class P2CAndApiDecorator extends LightningElement {
 
-    myTitle = 'Lakshay Ahuja';
+   @api myTitle = 'Lakshay Ahuja';
 }
