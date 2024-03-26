@@ -6,7 +6,6 @@ export default class TrackDecorator extends LightningElement {
     handleChange(event)
     {
         const field = event.target.name;
-       window.alert('Field name is :- '+field);
 
         if(field==='firstname')
         {

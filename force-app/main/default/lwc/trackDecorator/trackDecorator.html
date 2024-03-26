@@ -1,6 +1,11 @@
 <template>
-    <lightning-card tnitle="Track Decorator">
+    <lightning-card title="Track Decorator">
         <lightning-input name="firstname" label="Firstname" onchange={handleChange}></lightning-input>
         <lightning-input name="lastname" label="Lastname" onchange={handleChange}></lightning-input>
+    </lightning-card>
+    <lightning-card title="Updated Change Value">
+        Updated First Name : <b>{fullname.firstname}</b>
+        <br/>
+        Updated Lastname value : <b>{fullname.lastname}</b>
     </lightning-card>
 </template>
