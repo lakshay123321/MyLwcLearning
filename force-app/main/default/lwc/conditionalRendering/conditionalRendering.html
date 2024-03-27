@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Conditional Rendering">
+        <div class="slds-p-around_medium">
+            <template if:true={visible}>
+                <p>Statement 1</p>
+                <br/>
+               <lightning-button label={label} variant="brand" onclick={handleClick}></lightning-button> 
+            </template>
+            <template if:true={visible1}>
+                <p>Statement 2</p>
+                <br/>
+                <lightning-button label={label} variant="brand" onclick={handleClick}></lightning-button> 
+            </template>
+            <template if:true={visible2}>
+                <p>Statement 3</p>
+                <br/>
+                <lightning-button label={label} variant="brand" onclick={handleClick}></lightning-button> 
+            </template>
+        </div>
+    </lightning-card>
+</template>
