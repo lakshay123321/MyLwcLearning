@@ -1,0 +1,17 @@
+<template>
+   <lightning-card title="Button Card">
+        <lightning-button 
+                    variant="brand"
+                    label={label}
+                    onclick={clickHandle} style="margin-left: 20px;">
+        </lightning-button>
+   </lightning-card>
+
+    <template if:true={visible}>
+
+        <lightning-card title="IF : True | False">
+            <b style="margin-left: 20px;">Lakshay Ahuja</b>
+        </lightning-card>
+
+    </template>
+</template>
