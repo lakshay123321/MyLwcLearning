@@ -1,5 +1,6 @@
 import { LightningElement ,track} from 'lwc';
 import getContactList from '@salesforce/apex/ContactInfo.getContactList';
+
 const columns =[
     {label : 'Contact Record Id' , fieldName : 'Id'},
     {label : 'Contact Name' , fieldName : 'Name'}
