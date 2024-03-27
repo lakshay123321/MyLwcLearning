@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="For Each Loop">
+        <div class="slds-p-around_medium">
+            <b>The list of Accounts are as Follows :- </b><br/>
+            <ul>
+                <template for:each={accounts} for:item="account" for:index="index">
+                    <li key={account.id}>
+                        {account.Name}
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>
