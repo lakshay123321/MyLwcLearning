@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="ComboBox">
+        <div class="slds-p-around_medium">
+            <lightning-combobox 
+                       value={value}
+                       options={options}
+                       placeholder="Select any Account"
+                       label="Account"
+                       onchange={handleChange}>
+            </lightning-combobox>
+        </div>
+    </lightning-card>
+
+    <template if:true={visible}>
+        <lightning-card title="Value Card">
+            The Record Id of the Selected Account is :- <b>{value}</b>
+        </lightning-card>
+    </template>
+    
+</template>
