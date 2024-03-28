@@ -1,0 +1,9 @@
+<template>
+    <lightning-card icon-name="standard:accounts">
+        <lightning-record-edit-form object-api-name={objectApiName} density="compact" onsuccess={handleSuccess}>
+            <lightning-input-field field-name="Id" value={value}></lightning-input-field>
+            <lightning-input-field field-name={nameField}></lightning-input-field>
+            <lightning-button label="Submit" type="submit" variant="brand"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
