@@ -32,6 +32,7 @@ export default class ComboboxWithDataTable extends LightningElement {
     }
 
     handleChange(event)
+    
     {
         this.visible=true;
         this.value=event.detail.value;
