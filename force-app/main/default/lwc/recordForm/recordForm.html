@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Record Form">
+        <!-- <lightning-record-form object-api-name={objectName} columns="2" layout-type="half" onsubmit={handleSubmit}>
+        </lightning-record-form> -->
+        <lightning-record-form
+            record-id={recordId}
+            object-api-name={objectName}
+            columns="2"
+            fields={fields}
+            mode="edit"
+            onsubmit={handleSubmit}>
+        </lightning-record-form>
+    </lightning-card>
+</template>
