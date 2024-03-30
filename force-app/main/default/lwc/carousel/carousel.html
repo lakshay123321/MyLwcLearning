@@ -1,5 +1,8 @@
 <template>
-    <lightning-card title="Carousel">
+
+                                    <!-- ------------------------UnOptimised way------------------------ -->
+
+    <!-- <lightning-card title="Carousel">
         <div class="slds-p-around_medium">  
             <lightning-carousel disable-auto-scroll>
                 <lightning-carousel-image 
@@ -26,5 +29,17 @@
             </lightning-carousel>
     
         </div>
-    </lightning-card>
+    </lightning-card> -->
+
+                                    <!-- ------------------------Optimised way------------------------ -->
+        
+    <lightning-card title="Carousel">
+        <div class="slds-p-around_medium">
+            <lightning-carousel disable-auto-scroll>
+                <template for:each={carouselItems} for:item="item">
+                    <lightning-carousel-image key={item.id} src={item.src} header={item.header} description={item.description} alternative-text={item.altText} href={item.href}></lightning-carousel-image>
+                </template>
+            </lightning-carousel>
+        </div>
+    </lightning-card>                            
 </template>
