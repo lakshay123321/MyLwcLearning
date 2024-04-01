@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Carousel">
+        <div class="slds-p-around_small">
+            <lightning-carousel disable-auto-scroll>
+                <template for:each={carouselItems} for:item="item">
+                    <lightning-carousel-image key={item.id} src={item.src} header={item.header} description={item.description} href="javascript:void(0)"></lightning-carousel-image>
+                </template>
+            </lightning-carousel>
+        </div>
+    </lightning-card>
+</template>
