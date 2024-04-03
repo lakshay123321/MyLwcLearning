@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Parent Component" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+        <lightning-input
+            label="Set Starting Counter"
+            value={value}
+            placeholder="Please enter the value"
+            onchange={handleChange}>
+        </lightning-input>
+        </div>
+        <c-child-lwc-one counter-value={value}></c-child-lwc-one>
+    </lightning-card>
+</template>
