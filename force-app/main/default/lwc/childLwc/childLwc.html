@@ -1,0 +1,33 @@
+<template>
+   <lightning-card title="Child Component" icon-name="standard:contact">
+        <lightning-button 
+            label="Add"
+            icon-name="utility:add"
+            onclick={handleAdd}
+            style="margin-right: 10px;">
+            
+        </lightning-button>
+        <lightning-button 
+            label="Substract"
+            icon-name="utility:dash"
+            onclick={handleSubstract}
+            style="margin-right: 10px;">
+        </lightning-button>
+
+        <lightning-button 
+            label="2"
+            value="2"
+            icon-name="utility:close"
+            onclick={handleMultiply}
+            style="margin-right: 10px;">
+        </lightning-button>
+
+        <lightning-button 
+            label="10"
+            value="10"
+            icon-name="utility:close"
+            onclick={handleMultiply}
+            style="margin-right: 10px;">
+        </lightning-button>
+   </lightning-card>
+</template>
