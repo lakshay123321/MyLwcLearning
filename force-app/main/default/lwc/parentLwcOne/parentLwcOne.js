@@ -8,4 +8,8 @@ export default class ParentLwcOne extends LightningElement {
         const inputValue = parseInt(event.target.value);
         this.value = isNaN(inputValue) ? 'NaN' : inputValue;
     }
+    handleclick()
+    {
+        this.value+=10;
+    }
 }
